@@ -20,10 +20,33 @@ nav {
     height: 100px; 
 }
 
-nav a {
+/* list glow */
+
+nav a:link {
+    text-decoration: none;
+  }
+  
+nav a:visited {
     text-decoration: none;
     color: #fff;
-}
+  }
+  
+nav a {
+    color:#fff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+nav a:hover {
+    color: #fdec6e;
+    text-shadow:0px 0px 30px #fdec6e;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
 
 nav ul {
     display: flex;
@@ -32,7 +55,6 @@ nav ul {
     justify-content: space-evenly;
     font-size:  xx-large;
     flex-wrap: wrap;
-    height: 50px;
     align-content: center;
     border: 2px solid black;
     padding: 20px;
@@ -40,12 +62,15 @@ nav ul {
     border: 5px solid #fff;
 }
 
+/* Main, About, Projects, Contact  */
 .columns {
     display: flex;
     gap: 1em;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .card {
