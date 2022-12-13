@@ -113,6 +113,7 @@ nav ul {
 }
 
 .project-list {
+    position: relative;
     list-style: none;
     min-height: 0px;
 }
@@ -157,7 +158,6 @@ nav ul {
     width: 20%;
     height: 100%;
 }
-
 /* media */
 
 @media screen and (max-width: 768px) {
